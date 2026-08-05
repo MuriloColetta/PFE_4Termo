@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Revisão</title>
+</head>
+<body>
+    <header>
+        <img src="imagem/logo.jpg" alt="Logo da empresa">
+        <h1>Sensores</h1>
+        <p>Online</p>
+    </header>
+    <main>
+        <section class="controles">
+            <button id="atualizar" class="atualizar" onclick="renderizarDashboard()">Atualizar Dados</button>
+            <select name="" id="tipo-sensor">
+                <option value="todos">Todos</option>
+                <option value="temperatura">Temperatura</option>
+                <option value="umidade">Umidade</option>
+                <option value="pressao">Pressão</option>
+            </select>
+        </section>
+        <section id="sensores" class="sensores">
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 - Sensores</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

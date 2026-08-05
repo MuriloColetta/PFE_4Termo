@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    color: black;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header img {
+    height: 90%;
+    border-radius: 20%;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    height: 80px;
+}
+
+.controles button, .controles select {
+    padding: 10px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.atualizar {
+    background-color: orange;
+    color: white;
+    border: 0;
+    transition: 0.5s;
+}
+
+.atualizar:hover {
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+.sensores{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+    padding:20px;
+
+}
+
+.card{
+
+    background:var(--cor-card);
+
+    border:2px solid var(--cor-borda);
+
+    border-radius:10px;
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    transition:.3s;
+
+}
+
+.card-alerta{
+
+    background:var(--cor-alerta);
+
+    border-color:red;
+
+}
+
+.valor{
+
+    font-size:30px;
+    font-weight:bold;
+
+}
