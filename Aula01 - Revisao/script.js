@@ -27,8 +27,16 @@ function renderizarDashboard(lista) {
         if (sensor.status === "critico") {
             card.classList.add("card-alerta");
         }
+        let icone = "";
+        if (sensor.tipo === "Temperatura") {
+            icone = "🌡️";
+        } else if (sensor.tipo === "Umidade") {
+            icone = "💧";
+        } else if (sensor.tipo === "Pressão") {
+            icone = "⏱️";
+        }
         card.innerHTML = `
-            <h2>${sensor.nome}</h2>
+            <h2>${icone} ${sensor.nome}</h2>
             <p>Tipo: ${sensor.tipo}</p>
             <p class="valor">${sensor.valor} ${sensor.unidade}</p>
             <p>Status: ${sensor.status}</p>
