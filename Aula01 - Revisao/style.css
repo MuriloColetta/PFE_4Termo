@@ -3,21 +3,28 @@ body {
     color: black;
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: black;
+    color: white;
     padding: 10px;
-    height: 80px;
+    height: 10%;
     padding-left: 30px;
     padding-right: 30px;
 }
 
 header img {
-    height: 90%;
+    height: 70px;
     border-radius: 20%;
+}
+
+main {
+    min-height: 80vh;
 }
 
 .controles {
@@ -48,54 +55,60 @@ header img {
     transform: scale(1.1);
 }
 
-
-
-
-
-
-.sensores{
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:20px;
-
-    padding:20px;
-
+.sensores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
-.card{
-
-    background:var(--cor-card);
-
-    border:2px solid var(--cor-borda);
-
-    border-radius:10px;
-
-    padding:20px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:12px;
-
-    transition:.3s;
-
+.card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    height: 280px;
 }
 
-.card-alerta{
-
-    background:var(--cor-alerta);
-
-    border-color:red;
-
+.card {
+    background-color: white;
 }
 
-.valor{
+.card-alerta {
+    background-color: red;
+    color: white;
+}
 
-    font-size:30px;
-    font-weight:bold;
+.card .historico {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    height: 30px;
+    width: 80px;
+    transition: 0.5s;
+}
 
+.card .historico:hover {
+    background-color: darkorange;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 10%;
+    margin-top: 50px;
 }
